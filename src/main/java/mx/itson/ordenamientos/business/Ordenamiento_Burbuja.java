@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package mx.itson.ordenamientos.ordenamientos;
+package mx.itson.ordenamientos.business;
 
 /**
  *
  * @author PC AGRA
  */
-public class Ordenamientos {
+public class Ordenamiento_Burbuja {
 
     /**
      * Ordena un arreglo de enteros utilizando el algoritmo de Bubble Sort.

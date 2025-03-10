@@ -4,7 +4,7 @@
  */
 package mx.itson.ordenaminetos.main;
  import java.util.Scanner;
-import mx.itson.ordenamientos.ordenamientos.Ordenamientos;
+import mx.itson.ordenamientos.business.Ordenamiento_Burbuja;
 /**
  *
  * @author PC AGRA
@@ -19,8 +19,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // Crea un objeto Scanner para leer la entrada del usuario.
 
+        //EJEMPLO
+        
+        
         // Solicitar al usuario el tamaño del arreglo.
-        System.out.print("Ingrese el tamaño del arreglo: ");
+        System.out.print("Ingrese el tamano del arreglo: ");
         int n = scanner.nextInt(); // Lee el tamaño del arreglo ingresado por el usuario.
         int[] arr = new int[n]; // Declara e inicializa un arreglo de tamaño 'n'.
 
@@ -31,8 +34,8 @@ public class Main {
             arr[i] = scanner.nextInt(); // Lee un número ingresado por el usuario y lo almacena en el arreglo.
         }
 
-        // Llamar al método bubbleSort de la clase Ordenamientos para ordenar el arreglo.
-        Ordenamientos.bubbleSort(arr);
+        // Llamar al método bubbleSort de la clase Ordenamiento_Burbuja para ordenar el arreglo.
+        Ordenamiento_Burbuja.bubbleSort(arr);
 
         // Mostrar el arreglo ordenado.
         System.out.println("Arreglo ordenado:");
