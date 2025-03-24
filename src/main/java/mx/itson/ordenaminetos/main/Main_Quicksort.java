@@ -4,10 +4,23 @@
  */
 package mx.itson.ordenaminetos.main;
 
+import static mx.itson.ordenamientos.business.Ordenamiento_Quicksort.quickSort;
+
 /**
  *
  * @author PC AGRA
  */
 public class Main_Quicksort {
+    public static void main(String[] args) {
+        int[] arreglo = {12, 4, 9, 1, 5};
+
+        quickSort(arreglo, 0, arreglo.length - 1);
+
+        System.out.println("Arreglo ordenado:");
+        for (int num : arreglo) {
+            System.out.print(num + " ");
+        }
+    }
+    
     
 }
